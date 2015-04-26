@@ -24,6 +24,8 @@
     "hapi-assets": "~0.3.0",
     "hapi-cache-buster": "~0.4.0",
     "hapi-named-routes": "~0.3.0",
+    "mongojs": "^0.18.2",
+    "rand-token": "^0.2.1",
     "swig": "~1.4.2"
   },
   "devDependencies": {

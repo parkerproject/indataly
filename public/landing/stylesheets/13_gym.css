@@ -20,10 +20,8 @@
 */
 /*---  Part 0: #Misc ---*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700,400);
 body {
-  font-family: 'Open Sans', sans-serif;
-  !important;
+ font-family: 'Raleway', sans-serif;
 }
 .pixfort_gym_13 iframe.c1 {
   border: none;
@@ -89,7 +87,7 @@ body {
 /*---  Part 2: #Contact ---*/
 
 .pixfort_gym_13 .page_style {
-  background: url("../images/13_gym/bg.jpg") #1f334a fixed no-repeat center top;
+  background: url("../images/13_gym/bg.png") #1f334a fixed no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -105,14 +103,14 @@ body {
 .pixfort_gym_13 .title {
   text-align: center;
   font-size: 48px;
-  font-family: 'open sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: bolder;
   color: rgb(255, 255, 255);
 }
 .pixfort_gym_13 .subtitle {
   text-align: center;
   font-size: 22px;
-  font-family: 'open sans', sans-serif;
+/*  font-family: 'open sans', sans-serif;*/
   font-weight: normal;
   color: #d3d3d3;
 }
@@ -122,20 +120,7 @@ body {
 }
 .pixfort_gym_13 .start_btn a {
   background: #ff8833;
-  /*font-size:18px;
-          color: #fff;
-          font-family: 'open sans', sans-serif;
-
-          padding: 20px 30px;
-          line-height: 30px;
-          display: inline-block;
-          border-radius: 3px;
-          text-decoration:none;
-          position: relative;
-          display: inline-block;
-
-          padding-top: 15px;*/
-
+  font-weight: bold;
   border-radius: 5px;
   padding: 15px 25px;
   font-size: 22px;
@@ -154,7 +139,7 @@ body {
   text-align: center;
   color: #a9a9a9;
   font-size: 13px;
-  font-family: 'open sans', sans-serif;
+ /* font-family: 'open sans', sans-serif;*/
   padding-top: 30px;
 }
 @-webkit-keyframes new_icon {
@@ -191,7 +176,7 @@ body {
   color: #808080;
   padding-top: 30px;
   font-size: 14px;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   font-weight: bold;
 }
 .pixfort_gym_13 .padd_updown {
@@ -243,12 +228,12 @@ body {
   color: #000;
   font-weight: bold;
   font-size: 18px;
-  font-family: 'open sans', sans-serif;
+ /* font-family: 'open sans', sans-serif;*/
 }
 .pixfort_gym_13 .gym_text {
   color: rgb(169, 169, 169);
   font-size: 14px;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   max-width: 200px;
   margin-right: auto;
   margin-left: auto;
@@ -257,7 +242,7 @@ body {
   background: #ff8833;
   font-size: 12px;
   color: #fff;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   border-radius: 3px;
   text-decoration: none;
   position: relative;
@@ -274,7 +259,7 @@ body {
   background: #ff8833;
   font-size: 12px;
   color: #fff;
-  font-family: 'open sans', sans-serif;
+ /* font-family: 'open sans', sans-serif;*/
   border-radius: 3px;
   text-decoration: none;
   position: relative;
@@ -291,7 +276,7 @@ body {
   background: #ff8833;
   font-size: 12px;
   color: #fff;
-  font-family: 'open sans', sans-serif;
+ /* font-family: 'open sans', sans-serif;*/
   border-radius: 3px;
   text-decoration: none;
   position: relative;
@@ -330,14 +315,13 @@ body {
 .pixfort_gym_13 .title_st {
   color: #000000;
   font-size: 22px;
-  font-family: 'open sans', sans-serif;
+ /* font-family: 'open sans', sans-serif;*/
   line-height: 100%;
   padding-top: 10px;
 }
 .pixfort_gym_13 .subject_st {
-  color: rgb(169, 169, 169);
   font-size: 16px;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   line-height: 26px;
   display: inline-block;
   width: 100%;
@@ -349,18 +333,18 @@ body {
   overflow: hidden;
 }
 .pixfort_gym_13 .substyle {
-  background: #ebeaea;
+  border: 1px solid #ebeaea;
   height: 100%;
   padding-top: 40px;
   padding-bottom: 5px;
-  //border-radius: 3px;
+  /*border-radius: 3px;*/
 }
 .pixfort_gym_13 .title-style {
   margin-left: 20px;
   color: #000000;
   ;
   font-size: 22px;
-  font-family: open sans, sans-serif;
+  /*font-family: open sans, sans-serif;*/
 }
 .pixfort_gym_13 .text-style {
   position: relative;
@@ -368,7 +352,7 @@ body {
   font-size: 14px;
   color: rgb(169, 169, 169);
   margin-left: 20px;
-  font-family: open sans, sans-serif;
+  /*font-family: open sans, sans-serif;*/
 }
 .pixfort_gym_13 .send_btn button {
   background: #ff8833;
@@ -377,12 +361,13 @@ body {
   font-weight: normal;
   text-shadow: none;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   font-size: 16px;
   text-decoration: none;
   border: none;
   position: relative;
   display: inline-block;
+  font-weight: bold;
 }
 .pixfort_gym_13 .send_btn button:hover {
   background: #f27227;
@@ -398,11 +383,12 @@ body {
   background: #fff;
   height: 44px;
   border: 1px solid #fff;
+  border-bottom: 1px solid #ebeaea;
   border-radius: 3px;
   outline: none;
   color: #000;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   position: relative;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -423,7 +409,7 @@ body {
   text-align: center;
   color: #808080;
   font-size: 13px;
-  font-family: 'open sans', sans-serif;
+ /* font-family: 'open sans', sans-serif;*/
   padding: 25px 20px;
 }
 /*---  Part 6: #Testimonials ---*/
@@ -431,7 +417,7 @@ body {
 .pixfort_gym_13 .envato_unbounce {
   background: #f5f5f5;
   text-align: center;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   padding: 40px 0px;
   //border-bottom: 3px solid #b5232f;
 }
@@ -439,14 +425,14 @@ body {
   color: #808080;
   font-size: 20px;
   text-align: center;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   //max-width: 90%;
 }
 .pixfort_gym_13 .L3_style {
   color: #a9a9a9;
   font-size: 16px;
   text-align: center;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   //padding-bottom: 20px;
   line-height: 30px;
 }
@@ -482,7 +468,7 @@ body {
   float: right;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  font-family: 'open sans', sans-serif;
+/*  font-family: 'open sans', sans-serif;*/
   width: 80%;
   color: #808080;
   //   padding-top:  20px;
@@ -516,7 +502,7 @@ body {
 .pixfort_gym_13 .rights_st {
   color: #a9a9a9;
   font-size: 14px;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   text-align: left;
   padding-top: 25px;
   position: relative;
@@ -526,7 +512,7 @@ body {
   color: #f68121;
   font-weight: bold;
   font-size: 14px;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   text-align: left;
   position: relative;
   display: inline-block;
@@ -534,7 +520,7 @@ body {
 .pixfort_gym_13 .likes_st {
   color: #a9a9a9;
   font-size: 14px;
-  font-family: 'open sans', sans-serif;
+  /*font-family: 'open sans', sans-serif;*/
   position: relative;
   display: inline-block;
   padding: 25px 15px 0px 15px;
@@ -580,7 +566,7 @@ body {
   width: 500px;
   max-width: 100%;
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+/*  font-family: 'Open Sans', sans-serif;*/
   font-weight: 600;
   font-size: 26px;
   padding-top: 40px;
@@ -611,7 +597,7 @@ body {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
   padding-top: 10px;
   padding-bottom: 30px;
 }
@@ -653,6 +639,34 @@ body {
   border: 1px solid #FFCACA;
   border-radius: 5px;
   font-weight: normal;
+}
+
+.badge {
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  min-width: 1.5em;
+  min-height: 1em;
+  line-height: 1em;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  background-color: black;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.subject_st li{
+    padding-left: 39px;
+}
+.nav a{
+    padding: 4px;
+}
+
+#href_price{
+    padding-top: 10px;
+    font-size: 16px;
 }
 /*  Parallax fix for small scrren devices   */
 

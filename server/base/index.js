@@ -101,7 +101,7 @@ exports.register = function(server, options, next) {
           user_name: request.payload.user_name,
           user_referral: request.payload.user_referral,
         };
-				console.log(1);
+				
 
         db.users.findOne({
           email: request.payload.user_email
@@ -112,14 +112,14 @@ exports.register = function(server, options, next) {
               message: 'Signup failed'
             });
           }
-          console.log(2);
+    
           if (result) {
             reply({
               status: 1,
               message: 'You have already submitted your email.'
             });
           } else {
-						console.log(3);
+						
 						data.user_id = randtoken.generate(5);
             saveEmail(data, reply);
           }

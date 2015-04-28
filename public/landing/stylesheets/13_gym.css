@@ -347,7 +347,7 @@ body {
 .pixfort_gym_13 .title_st {
     color: #000000;
     font-size: 22px;
-    text-decoration: uppercase;
+    text-transform: uppercase;
     line-height: 100%;
     padding-top: 10px;
 }

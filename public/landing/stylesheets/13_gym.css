@@ -688,7 +688,7 @@ body {
     text-align: center;
     min-width: 1.5em;
     min-height: 1em;
-    line-height: 1em;
+/*    line-height: 1em;*/
     display: inline-block;
     color: white;
     text-align: center;
@@ -733,8 +733,8 @@ body {
         padding-top: 10px;
     }
     
-    .pixfort_gym_13 .page_style {
-        background: #000;
+    .pixfort_gym_13 .title_st {
+        font-size: 17px;
     }
     
     .subject_st li {

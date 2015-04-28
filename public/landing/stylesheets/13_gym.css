@@ -393,14 +393,13 @@ body {
     font-weight: normal;
     text-shadow: none;
     color: #fff;
-    /*font-family: 'Open Sans', sans-serif;*/
-    
     font-size: 16px;
     text-decoration: none;
     border: none;
     position: relative;
     display: inline-block;
     font-weight: bold;
+    width: 100%;
 }
 .pixfort_gym_13 .send_btn button:hover {
     background: #f27227;
@@ -416,13 +415,11 @@ body {
     background: #fff;
     height: 44px;
     border: 1px solid #fff;
-    border-bottom: 1px solid #ebeaea;
+    border: 1px solid #ebeaea;
     border-radius: 3px;
     outline: none;
     color: #000;
     font-size: 15px;
-    /*font-family: 'Open Sans', sans-serif;*/
-    
     position: relative;
     width: 100%;
     -webkit-box-sizing: border-box;

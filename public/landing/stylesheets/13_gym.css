@@ -42,8 +42,6 @@ body {
 .pixfort_gym_13 .header_style {
     background: #fff;
     padding: 20px 0px;
-    //border-bottom: 3px solid #ddd;
-    box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .pixfort_gym_13 .yt_button {
@@ -96,11 +94,13 @@ body {
 /*---  Part 2: #Contact ---*/
 
 .pixfort_gym_13 .page_style {
-    background: url("../images/13_gym/bg.png") #1f334a fixed no-repeat center top;
+    /*    background: url("../images/13_gym/bg.png") #1f334a fixed no-repeat center top;*/
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background: #2790B0;
 }
 
 .pixfort_gym_13 .text_page {
@@ -122,10 +122,8 @@ body {
 .pixfort_gym_13 .subtitle {
     text-align: center;
     font-size: 22px;
-    /*  font-family: 'open sans', sans-serif;*/
-    
     font-weight: normal;
-    color: #d3d3d3;
+    color: #fff;
 }
 
 .pixfort_gym_13 .one_link {

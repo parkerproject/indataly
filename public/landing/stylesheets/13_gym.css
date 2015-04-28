@@ -347,8 +347,7 @@ body {
 .pixfort_gym_13 .title_st {
     color: #000000;
     font-size: 22px;
-    /* font-family: 'open sans', sans-serif;*/
-    
+    text-decoration: uppercase;
     line-height: 100%;
     padding-top: 10px;
 }
@@ -701,6 +700,8 @@ body {
     background-color: black;
     font-weight: bold;
     margin-right: 5px;
+    border-radius: 1em;
+    vertical-align: middle;
 }
 .subject_st li {
     padding-left: 39px;

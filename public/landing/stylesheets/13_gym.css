@@ -420,6 +420,9 @@ body {
     font-size: 15px;
     position: relative;
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
     
@@ -688,7 +691,8 @@ body {
     text-align: center;
     min-width: 1.5em;
     min-height: 1em;
-/*    line-height: 1em;*/
+    /*    line-height: 1em;*/
+    
     display: inline-block;
     color: white;
     text-align: center;

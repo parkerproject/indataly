@@ -594,10 +594,8 @@ body {
   width: 500px;
   max-width: 100%;
   position: relative;
-  /*  font-family: 'Open Sans', sans-serif;*/
-  
   font-weight: 600;
-  font-size: 26px;
+  font-size: 18px;
   padding-top: 40px;
 }
 .pixfort_gym_13 .sub_text {
@@ -621,7 +619,7 @@ body {
 }
 .pixfort_gym_13 .confirm_text {
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   color: black;
   max-width: 400px;
   margin-left: auto;

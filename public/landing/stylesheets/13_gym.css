@@ -85,13 +85,11 @@ body {
 /*---  Part 2: #Contact ---*/
 
 .pixfort_gym_13 .page_style {
-  /*    background: url("../images/13_gym/bg.png") #1f334a fixed no-repeat center top;*/
-  
+  background: url("../images/13_gym/main.png") #2790B0 fixed no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: #2790B0;
 }
 .pixfort_gym_13 .text_page {
   text-align: center;
@@ -716,6 +714,9 @@ body {
 @media (max-width: 768px) {
   .logo_style {
     text-align: center;
+  }
+  .pixfort_gym_13 .logo_style span {
+    margin: 0 auto;
   }
   .nav {
     text-align: center;

@@ -58,19 +58,19 @@ exports.register = function(server, options, next) {
         }
     }, {
         method: 'GET',
-        path: '/landing/{path*}',
+        path: '/landing_2/{path*}',
         config: {
             handler: {
                 directory: {
-                    path: './public/landing'
+                    path: './public/landing_2'
                 }
             },
-            id: 'landing'
+            id: 'landing_2'
         }
     }]);
 
     next();
-}
+};
 
 exports.register.attributes = {
     name: 'assets'

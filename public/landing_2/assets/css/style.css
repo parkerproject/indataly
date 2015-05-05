@@ -257,7 +257,7 @@ blockquote:after { font-family: "line-icons";  position: absolute; color: #2790B
 #sc-countdown { margin-bottom: 50px; }
 
 /* Navigation Header */
-.navigation-header { position: absolute; top:10px; background: transparent; left: 0; right: 0; width: 100%; z-index: 99; }
+.navigation-header { position: absolute; top:0; background: rgba(0,0,0,0.3); left: 0; right: 0; width: 100%; z-index: 99; }
 .navigation-header .navigation-brand { margin-right: 125px; margin-top: 17px; }
 .navigation-header .navigation-bar > li { padding: 15px 15px; }
 .navigation-header .navigation-bar > li > a { font-size: 13px; text-transform: uppercase; color: #eff3f6; border-bottom: 2px solid transparent; padding: 10px 0; line-height: 13px; opacity: 0.8; }

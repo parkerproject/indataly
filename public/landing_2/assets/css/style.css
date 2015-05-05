@@ -988,3 +988,19 @@ h1{
  li.active{
      border-bottom: 3px solid #fff;
  }
+ 
+ #toast-container>div{
+     color: black;
+ }
+ 
+ .toast-success{
+     background: white;
+ }
+ 
+ .refer-url{
+     background-color: yellow;
+ }
+ 
+ .register-version.static-header{
+     background: #2790B0;
+ }

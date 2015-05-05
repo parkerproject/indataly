@@ -116,9 +116,12 @@ exports.register = function(server, options, next) {
                     }
 
                     if (result) {
+                        console.log(result);
+                        
                         reply({
                             status: 1,
-                            message: 'You have already submitted your email.'
+                            message: 'You have already submitted your email.',
+                            url: 'http://indataly.com/#' + result.userId
                         });
                     } else {
 

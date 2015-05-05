@@ -1,3 +1,6 @@
+/* global $ */
+/* global app */
+/* global toastr */
 /*
  *
  * Custom js snippets for Startuply v1.1
@@ -7,6 +10,7 @@
 window._hash = window.location.hash;
 var hash = window._hash;
 hash = hash.replace('#', '');
+
 
 (function() {
   "use strict";
@@ -136,7 +140,10 @@ hash = hash.replace('#', '');
 
   // Form validation - sign up
   toastr.options = {
-    "positionClass": "toast-top-full-width"
+    "positionClass": "toast-top-full-width",
+    "closeButton" : true,
+    "timeOut" : 0,
+    "extendedTimeOut": 0
   };
   if ($('.form-register').length) {
     $('.form-register').validate({
@@ -178,8 +185,8 @@ hash = hash.replace('#', '');
             data: post_data,
           })
           .done(function(response) {
-            if (!response.status == 0) {
-              toastr.success('Thank you for signing up.');
+            if (response.message !== 'Signup failed') {
+              toastr.success('Thank you for signing up. Refer a friend and get first month($5) free. <span class="refer-url">'+ response.url+'</span>');
               $this[0].reset();
             } else {
               toastr.error('An error occured. Please try again later.');

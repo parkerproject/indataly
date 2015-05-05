@@ -513,12 +513,12 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 #awards .list-inline > li a:hover { opacity: 0.7; }
 
 /* Footer */
-.footer { background: url('../img/background/low_poly_background.jpg') no-repeat top center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; background-attachment: fixed; color: #ababab; font-weight: 300; padding: 0px 0px 30px 0px; }
+.footer { background-attachment: fixed; color: #ababab; font-weight: 300; padding: 0px 0px 30px 0px; }
 .footer p, .footer li { color: #fff; }
 .footer p { font-size: 15px; line-height: 24px; }
 .footer a:hover { text-decoration: underline; }
 .footer .logo-wrapper { margin-bottom: 20px; }
-.footer .footer-content { padding: 75px 0 65px; }
+/*.footer .footer-content { padding: 75px 0 65px; }*/
 .footer .footer-title { color: #fff; font-size: 17px; text-transform: uppercase; font-weight: 700; text-align: center; margin-bottom: 25px; }
 .footer .list-inline { text-align: center; margin: 0 auto; }
 .footer .list-inline li { padding-left: 15px; padding-right: 15px; padding-bottom: 15px; }
@@ -970,13 +970,21 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
   text-transform: capitalize;
 }
 
-.cta:hover{
-	background: #CE3323;
-	color: white;
-	border-color: transparent;
+.cta:hover, .cta:link, .cta:active, .cta:focus, .cta:visited{
+	background: #CE3323!important;
+	color: white!important;
+	border-color: transparent!important;
 }
 
 h1{
 	font-weight: bold;
 }
  
+ .navigation-header .navigation-bar > li{
+     padding-bottom: 0;
+     font-weight: bold;
+ }
+ 
+ li.active{
+     border-bottom: 3px solid #fff;
+ }

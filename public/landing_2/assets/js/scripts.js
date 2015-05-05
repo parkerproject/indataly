@@ -141,8 +141,8 @@ hash = hash.replace('#', '');
   // Form validation - sign up
   toastr.options = {
     "positionClass": "toast-top-full-width",
-    "closeButton" : true,
-    "timeOut" : 0,
+    "closeButton": true,
+    "timeOut": 0,
     "extendedTimeOut": 0
   };
   if ($('.form-register').length) {
@@ -170,6 +170,7 @@ hash = hash.replace('#', '');
         email: "Please enter a valid email address"
       },
       submitHandler: function(form) {
+        $('.cta').text('Processing request...');
         var $this = $(form);
         var user_name = $('#fullname').val();
         var user_email = $('#email').val();
@@ -180,20 +181,24 @@ hash = hash.replace('#', '');
         };
 
         $.ajax({
-            url: $this.attr('action'),
-            type: 'POST',
-            data: post_data,
-          })
+          url: $this.attr('action'),
+          type: 'POST',
+          data: post_data,
+        })
           .done(function(response) {
             if (response.message !== 'Signup failed') {
-              toastr.success('Thank you for signing up. Refer a friend and get first month($5) free. <span class="refer-url">'+ response.url+'</span>');
+              //$('.cta').text('Request Early Access');
+              window.location.href = '/confirm?user=' + response.user;
+              //toastr.success('Thank you for signing up. Refer a friend and get first month($5) free. <span class="refer-url">'+ response.url+'</span>');
               $this[0].reset();
             } else {
               toastr.error('An error occured. Please try again later.');
+              $('.cta').text('Request Early Access');
             }
           })
           .fail(function() {
             toastr.error('An error occured. Please try again later.');
+            $('.cta').text('Request Early Access');
           });
       }
     });

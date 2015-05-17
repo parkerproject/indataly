@@ -78,7 +78,7 @@ exports.register = function(server, options, next) {
             handler: function(request, reply) {
                 // Render the view with the custom greeting
                 reply.view('landing_2', {
-                    title: 'SEO made for Everyone - INDATALY'
+                    title: 'SEO for Everyone - INDATALY'
                 });
             },
             id: 'index'
@@ -90,7 +90,7 @@ exports.register = function(server, options, next) {
             handler: function(request, reply) {
                 // Render the view with the custom greeting
                 reply.view('landing_2', {
-                    title: 'SEO made for Everyone - INDATALY'
+                    title: 'SEO for Everyone - INDATALY'
                 });
             },
             id: 'misc'

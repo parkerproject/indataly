@@ -100,6 +100,13 @@ exports.register = function(server, options, next) {
         path: '/process_email',
         config: {
             handler: function(request, reply) {
+
+                if (request.payload.user_email == null) {
+                    reply({
+                        status: 0,
+                        message: 'Signup failed'
+                    });
+                }
                 var data = {
                     user_email: request.payload.user_email,
                     user_name: request.payload.user_name,

@@ -1,0 +1,160 @@
+@font-face {
+	font-family:"light";
+	src:url('/fonts/OpenSans-Light.eot');
+	src:url('/fonts/OpenSans-Light.woff') format("woff"), url('/fonts/OpenSans-Light.svg') format("svg"), url(fonts/OpenSans-Light.ttf) format("truetype");
+}
+@font-face {
+	font-family:"sans";
+	src:url('/fonts/OpenSans.eot');
+	src:url('/fonts/OpenSans.woff') format("woff"), url('/fonts/OpenSans.svg') format("svg"), url(fonts/OpenSans.ttf) format("truetype");
+}
+@font-face {
+	font-family:"thin";
+	src:url('/fonts/Calibre-Thin.eot');
+	src:url('/fonts/Calibre-Thin.woff') format("woff"), url('/fonts/Calibre-Thin.svg') format("svg"), url(fonts/Calibre-Thin.ttf) format("truetype");
+}
+@font-face {
+	font-family:"semi";
+	src:url('/fonts/OpenSans-Semibold.eot');
+	src:url('/fonts/OpenSans-Semibold.woff') format("woff"), url('/fonts/OpenSans-Semibold.svg') format("svg"), url(fonts/OpenSans-Semibold.ttf) format("truetype");
+}
+.clear{clear: both;}
+
+.container{max-width: 1150px}
+
+
+ header{background: #204d7b;min-height: 500px;}
+.navbar-default{background: white;background-size: 100%}
+.navbar-default .navbar-nav > li > a{color: #000;border-bottom: 2px solid transparent;font-size: 15px}
+.navbar-default .navbar-nav > li:hover > a{color: green;border-bottom: 2px solid #5ab79c;}
+.home_text{margin: 230px auto 200px auto;color: #fff;margin-bottom: 0px}
+.home_text h2{font-family: 'thin';font-size: 60px;}
+.home_text p{font-family: 'light';font-size: 14px; padding-bottom: 10px;}
+.home_button, .warp2 button{
+	font-size: 18px;
+	background: transparent;
+	padding: 10px 40px;
+	color: #fff;
+	font-family: 'sans';
+	border: 1px solid white;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.home_button:hover{color: white; text-decoration: underline;}
+.benifit{background: url(/images/right.png) no-repeat right bottom;background-size: 55%}
+.about_title1 h2{margin-top: 80px;margin-bottom: 80px;font-family: 'thin';color: #0f1418;font-size: 50px}
+.left{margin-left: 20%;margin-bottom: 55px}
+.s{}
+.s img{margin-right: 20px}
+.s h4{font-family: 'sans';font-size: 14px;color: #646464;margin: 0px}
+.s p{margin-left: 64px;font-family: 'light';font-size: 13px;color: #9c9e9d;margin-bottom: 20px}
+.tabbing ul li{	box-sizing: border-box; border: 2px solid transparent;}
+.off-white{color: #9FC5E4; }
+.more_feture{}
+.about_title h2{margin-bottom: 30px;font-family: 'light';color: #0f1418;font-size: 25px;margin-top: 80px}
+.feat{max-width: 800px}
+.feat h4{font-family: 'sans';color: #646464;font-size: 14px;margin: 0px}
+.feat h4 img{margin-right: 20px}
+.feat p{margin-left: 64px;font-family: 'light';color: #9c9e9d;font-size: 13px;margin-bottom: 20px}
+
+.pricing{padding: 150px auto;background: #fafbfb;margin-bottom: 30px;}
+.pricing h2{text-align: center;font-family: 'thin';color: #101519;font-size: 50px}
+.simple_pricing{width: 40%;margin: 0 auto}
+.warp1{
+	  background: white;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    border: 2px solid #3f8cca;
+	}
+.warp1 span{font-family: 'sans';font-size: 16px;margin-bottom: 15px}
+.warp1 p{text-align: justify;font-family: 'sans';}
+.warp1 .first{margin-top: 25px}
+.warp1 .fa{background: #3f8cca;color: #fff;font-size: 20px}
+.warp2{padding: 10px;padding: 30px;text-align: center;}
+.warp2 p{text-align: center;}
+
+.form_tabs{width: 400px;margin: 0 auto;}
+
+.nav-tabs{margin: 0 auto;padding: 0;width: 164px; border: 1px solid #d6d6d6; border-radius: 25px;}
+.nav-tabs li{padding: 0;}
+.nav-tabs li:last-child{position: relative; left:4px; bottom:1px;}
+.nav-tabs li:first-child{position: relative; right:1px}
+.nav-tabs > li > a{border: 2px solid transparent;}
+.nav-tabs > li > a:hover{background: transparent;border: 2px solid transparent;color: #fff;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{background: #3f8cca;border: 2px solid #fff;color: #fff;border-radius: 25px; box-sizing:border-box;}
+.form{background: #3f8cca;padding: 140px 0px;font-family: 'sans';color: #fff;}
+.form form{width: 320px;margin: 0 auto;}
+.form form input{width: 320px;margin: 10px;border: 1px solid #d6d6d6;border-radius: 5px;background: #3f8cca;padding: 8px;font-family: }
+.form fieldset{border: 1px solid #d6d6d6;border-radius: 5px;margin-left: 9px;margin-bottom: 10px}
+.form legend{margin-left: 10px;width: auto;border-width: 0px;margin-bottom: 0px;font-size: 12px;color: #a7cae1;}
+.form input[type="email"]{border: 0px;width: 310px;margin: 0px 8px 0px 0px}
+::-webkit-input-placeholder { color: #FFF; }
+::-moz-placeholder{color: #FFF;}
+:-moz-placeholder{color: #FFF;}
+::-ms-input-placeholder{color: #FFF;}
+.form fieldset{
+	width: 100%;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.form .login_pass{border: 0px;width: 310px;margin: 0px 8px 0px 0px;}
+.form button{background: #3f8cca;border: 2px solid #fff;color: #fff;border-radius: 20px;padding: 10px 20px}
+.form .button{margin-top: 10px}
+.form .fa{border-radius: 20px;border: 1px solid #d6d6d6;padding: 10px;width: 38px;cursor: pointer;}
+.tabbing{width: 156px;border: 1px solid #d6d6d6;border-radius: 20px;margin: 0 auto;margin-bottom: 30px; height: 44px;}
+.footer{background: #0f1418;color: #fff;padding: 20px}
+.brand{margin-left: 15px}
+.brand p{color: #3d4044;font-family: 'sans';font-size: 13px;}
+.footer .navbar-default{background: none;color: #fff;}
+.footer-widget{}
+.footer-widget h4{color: #ffffff;font-family: 'semi';font-size: 15px;margin-bottom: 20px}
+.footer-widget li{list-style: none;}
+.footer-widget li a{color: #616469;font-family: 'sans';font-size: 13px;display: block;padding: 3px 0px}
+.footer-widget li:hover a{color: #fff;text-decoration: underline;}
+
+.price-listings{
+
+}
+
+.price-listings li{
+list-style: none;
+padding: 15px 0 15px 30px;
+text-align: left;
+}
+
+.form-inline .signup-input{
+width: 400px;
+border: 1px solid white;
+height: 40px;
+position: relative;
+top: -2px;
+border-radius: 0;
+}
+
+a:hover, a:focus{
+	color: white;
+}
+
+@media(max-width: 992px){
+	.navbar-default{background: rgba(146, 146, 146, 0.77);}
+	.home_text h2,.home_text p{color: #C5C5C5;margin-top: -20px}
+	.benifit{background: none;}
+	.left{margin-left: 0%;}
+	.footer .navbar-default{text-align: center;}
+	.footer-nav{width: 400px;margin: 0 auto}
+	.footer-widget{width: 400px;margin: 0 auto}
+	.small{float: left !important;}
+}
+
+@media(max-width: 767px){
+	.container{width: 100%}
+	.navbar-fixed-top{position: inherit;}
+	.home_text{margin: 100px auto;}
+	header{height: 380px; background: transparent url("images/header2.png") no-repeat scroll 0 0 / 120% 100%}
+	.left{margin-left: 0%;}
+	.pricing{padding: 20px}
+}

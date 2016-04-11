@@ -1,14 +1,14 @@
 /**
  * Dependencies.
  */
-var requireDirectory = require('require-directory')
-
+'use strict'
+const requireDirectory = require('require-directory')
 module.exports = function (server) {
   // Bootstrap your controllers so you dont have to load them individually. This loads them all into the controller name space. https://github.com/troygoode/node-require-directory
-  var controller = requireDirectory(module, '../controllers')
-
-  // Array of routes for Hapi
-  var routeTable = [{
+  const controller = requireDirectory(module, '../controllers')
+  const api = requireDirectory(module, '../api')
+    // Array of routes for Hapi
+  const routeTable = [{
     method: 'GET',
     path: '/{path*}',
     config: controller.base.missing
@@ -24,6 +24,14 @@ module.exports = function (server) {
     method: 'GET',
     path: '/css/{path*}',
     config: controller.assets.css
+  }, {
+    method: 'GET',
+    path: '/pages/{path*}',
+    config: controller.assets.pages
+  }, {
+    method: 'GET',
+    path: '/assets/{path*}',
+    config: controller.assets.assets
   }, {
     method: 'GET',
     path: '/fonts/{path*}',
@@ -56,6 +64,26 @@ module.exports = function (server) {
     method: 'GET',
     path: '/thankyou',
     config: controller.index.thankyou
+  }, {
+    method: 'GET',
+    path: '/api/domain',
+    config: api.domain.index
+  }, {
+    method: 'GET',
+    path: '/api/rank',
+    config: api.google_page_rank.index
+  }, {
+    method: 'GET',
+    path: '/api/urlmetrics',
+    config: api.url_metrics.index
+  }, {
+    method: 'GET',
+    path: '/api/engine',
+    config: api.engine.index
+  }, {
+    method: 'GET',
+    path: '/register',
+    config: controller.register.index
   }]
   return routeTable
 }

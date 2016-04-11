@@ -30,6 +30,26 @@ module.exports = {
       name: 'css'
     }
   },
+  assets: {
+    handler: {
+      directory: {
+        path: './public/assets'
+      }
+    },
+    app: {
+      name: 'assets'
+    }
+  },
+  pages: {
+    handler: {
+      directory: {
+        path: './public/pages'
+      }
+    },
+    app: {
+      name: 'pages'
+    }
+  },
   fonts: {
     handler: {
       directory: {

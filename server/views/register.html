@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to indataly</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/preloader.css">
+  <link rel="stylesheet" href="/css/bsqs.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="/js/lte-ie7.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <link rel="icon" type="images/png" href="/images/favicon.png">
+
+</head>
+
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+
+  <!-- Preloader -->
+
+
+
+  <div class="section_overlay">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#HOME"><img src="/images/logo.png" alt="seo marketing for websites" width="120"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <a href="/" class="pull-right back">&larr; Back to Homepage</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="login-page">
+    <div class="form" id="myform">
+      <form class="register-form">
+        <label>Enter email for your campaign</label>
+        <input type="email" placeholder="Email address" class="email-js" name="email" required />
+        <label>Enter website for your campaign</label>
+        <input type="url" placeholder="URL of website" class="website-js" name="url" required />
+        <button class="continue-js">Continue</button>
+        <!-- <p class="message">Already registered? <a href="#">Sign In</a></p> -->
+      </form>
+      <!-- <form class="login-form">
+        <input type="text" placeholder="username" />
+        <input type="password" placeholder="password" />
+        <button>login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form> -->
+    </div>
+  </div>
+
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wow fadeInLeft animated footer-nav">
+          <div class="brand">
+            <p style="position: relative;top:-15px;">&copy; 2016, Indataly. All right reserved.</p>
+          </div>
+        </div>
+        <div class="col-md-6  footer-widget">
+          <div class="col-md-4 wow small fadeInRight animated" data-wow-delay="1s">
+            <li><a href="https://www.facebook.com/INDATALY-1423683057940340/">Facebook</a>
+              <li><a href="https://medium.com/@indataly">Medium blog</a></li>
+              <li><a href="https://twitter.com/getindataly">Twitter</a></li>
+          </div>
+          <div class="col-md-4 small wow fadeInRight animated" data-wow-delay="2s">
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of service</a></li>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <script src="/js/stripe.js"></script>
+
+  <script>
+    var handler = StripeCheckout.configure(
+    {
+      key: 'pk_test_WZoRgKB96e6hnLTfnWADrY3M',
+      image: 'https://dl.dropboxusercontent.com/u/9995989/logo_indataly.png',
+      locale: 'auto',
+      'panel-label': 'Join',
+      token: function(token)
+      {
+        var data = token
+        data.website = document.querySelector('.website-js').value
+        console.log(data)
+          // Use the token to create the charge with a server-side script.
+          // You can access the token ID with `token.id`
+      }
+    })
+    $('.continue-js').on('click', function(e)
+    {
+      e.preventDefault()
+      var website_url = document.querySelector('.website-js').value
+      var email = document.querySelector('.website-js').value
+      if (website_url === '' || email === '')
+      {
+        return
+      }
+      handler.open(
+        {
+          name: 'Standard plan($29)',
+          description: 'Begin your 14-day free trial',
+          email: document.querySelector('.email-js').value
+        })
+        //  $(form).ajaxSubmit()
+    })
+  </script>
+</body>
+
+</html>

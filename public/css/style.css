@@ -23,20 +23,24 @@
 .container{max-width: 1150px}
 
 
- header{background: #204d7b;min-height: 500px;}
+ header{
+	 min-height: 600px;
+	 background: url(/images/header3.png) no-repeat;
+background-size: cover;
+ }
 .navbar-default{background: white;background-size: 100%}
-.navbar-default .navbar-nav > li > a{color: #000;border-bottom: 2px solid transparent;font-size: 15px}
+.navbar-default .navbar-nav > li > a{color: #000;border-bottom: 2px solid transparent;font-size: 12px;text-transform: uppercase;}
 .navbar-default .navbar-nav > li:hover > a{color: green;border-bottom: 2px solid #5ab79c;}
 .home_text{margin: 230px auto 200px auto;color: #fff;margin-bottom: 0px}
 .home_text h2{font-family: 'thin';font-size: 60px;}
 .home_text p{font-family: 'light';font-size: 14px; padding-bottom: 10px;}
 .home_button, .warp2 button{
 	font-size: 18px;
-	background: transparent;
+	background: #22bb5b;
 	padding: 10px 40px;
 	color: #fff;
 	font-family: 'sans';
-	border: 1px solid white;
+	border: 1px solid #22bb5b;
 	border-radius: 0;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -54,9 +58,9 @@
 .more_feture{}
 .about_title h2{margin-bottom: 30px;font-family: 'light';color: #0f1418;font-size: 25px;margin-top: 80px}
 .feat{max-width: 800px}
-.feat h4{font-family: 'sans';color: #646464;font-size: 14px;margin: 0px}
+.feat h4{font-family: 'sans';color: #646464;font-size: 19px;margin: 0px}
 .feat h4 img{margin-right: 20px}
-.feat p{margin-left: 64px;font-family: 'light';color: #9c9e9d;font-size: 13px;margin-bottom: 20px}
+.feat p{margin-left: 64px;font-family: 'light';margin-bottom: 20px}
 
 .pricing{padding: 150px auto;background: #fafbfb;margin-bottom: 30px;}
 .pricing h2{text-align: center;font-family: 'thin';color: #101519;font-size: 50px}
@@ -85,17 +89,17 @@
 .nav-tabs > li > a:hover{background: transparent;border: 2px solid transparent;color: #fff;}
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus{background: #3f8cca;border: 2px solid #fff;color: #fff;border-radius: 25px; box-sizing:border-box;}
-.form{background: #3f8cca;padding: 140px 0px;font-family: 'sans';color: #fff;}
+/*.form{background: #3f8cca;padding: 140px 0px;font-family: 'sans';color: #fff;}
 .form form{width: 320px;margin: 0 auto;}
 .form form input{width: 320px;margin: 10px;border: 1px solid #d6d6d6;border-radius: 5px;background: #3f8cca;padding: 8px;font-family: }
 .form fieldset{border: 1px solid #d6d6d6;border-radius: 5px;margin-left: 9px;margin-bottom: 10px}
 .form legend{margin-left: 10px;width: auto;border-width: 0px;margin-bottom: 0px;font-size: 12px;color: #a7cae1;}
-.form input[type="email"]{border: 0px;width: 310px;margin: 0px 8px 0px 0px}
-::-webkit-input-placeholder { color: #FFF; }
-::-moz-placeholder{color: #FFF;}
-:-moz-placeholder{color: #FFF;}
-::-ms-input-placeholder{color: #FFF;}
-.form fieldset{
+.form input[type="email"]{border: 0px;width: 310px;margin: 0px 8px 0px 0px}*/
+::-webkit-input-placeholder { color: gray; }
+::-moz-placeholder{color: gray;}
+:-moz-placeholder{color: gray;}
+::-ms-input-placeholder{color: gray;}
+/*.form fieldset{
 	width: 100%;
 	border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -104,7 +108,7 @@
 .form .login_pass{border: 0px;width: 310px;margin: 0px 8px 0px 0px;}
 .form button{background: #3f8cca;border: 2px solid #fff;color: #fff;border-radius: 20px;padding: 10px 20px}
 .form .button{margin-top: 10px}
-.form .fa{border-radius: 20px;border: 1px solid #d6d6d6;padding: 10px;width: 38px;cursor: pointer;}
+.form .fa{border-radius: 20px;border: 1px solid #d6d6d6;padding: 10px;width: 38px;cursor: pointer;}*/
 .tabbing{width: 156px;border: 1px solid #d6d6d6;border-radius: 20px;margin: 0 auto;margin-bottom: 30px; height: 44px;}
 .footer{background: #0f1418;color: #fff;padding: 20px}
 .brand{margin-left: 15px}
@@ -157,4 +161,73 @@ a:hover, a:focus{
 	header{height: 380px; background: transparent url("images/header2.png") no-repeat scroll 0 0 / 120% 100%}
 	.left{margin-left: 0%;}
 	.pricing{padding: 20px}
+}
+
+.login-page {
+	width: 500px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 500px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.form button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #22bb5b;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+	background: #43A047;
+}
+
+.form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+
+.form .message a {
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+.back:hover {
+	color: #43A047;
+}
+
+.bottom-p{
+	margin: 30px 0;
 }

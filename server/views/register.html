@@ -59,9 +59,11 @@
   <div class="login-page">
     <div class="form" id="myform">
       <form class="register-form">
-        <label>Enter email for your campaign</label>
+        <label>Enter your full name</label>
+        <input type="text" placeholder="Full name" class="name-js" name="fullname" required />
+        <label>Enter your email</label>
         <input type="email" placeholder="Email address" class="email-js" name="email" required />
-        <label>Enter website for your campaign</label>
+        <label>Enter the website for your campaign</label>
         <input type="url" placeholder="URL of website" class="website-js" name="url" required />
         <button class="continue-js">Continue</button>
         <!-- <p class="message">Already registered? <a href="#">Sign In</a></p> -->
@@ -115,9 +117,14 @@
       {
         var data = token
         data.website = document.querySelector('.website-js').value
-        console.log(data)
-          // Use the token to create the charge with a server-side script.
-          // You can access the token ID with `token.id`
+        data.fullname = document.querySelector('.name-js').value
+        $.post("/payment", data, function(status)
+        {
+          if (status === 'success')
+          {
+            location.href = '/'
+          }
+        });
       }
     })
     $('.continue-js').on('click', function(e)
@@ -125,7 +132,8 @@
       e.preventDefault()
       var website_url = document.querySelector('.website-js').value
       var email = document.querySelector('.website-js').value
-      if (website_url === '' || email === '')
+      var fullname = document.querySelector('.name-js').value
+      if (website_url === '' || email === '' || fullname === '')
       {
         return
       }

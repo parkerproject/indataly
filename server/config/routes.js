@@ -84,6 +84,10 @@ module.exports = function (server) {
     method: 'GET',
     path: '/register',
     config: controller.register.index
+  }, {
+    method: 'POST',
+    path: '/payment',
+    config: controller.payment.index
   }]
   return routeTable
 }

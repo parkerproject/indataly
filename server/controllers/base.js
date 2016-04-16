@@ -22,5 +22,13 @@ module.exports = {
     app: {
       name: '404'
     }
+  },
+  thankyou: {
+    handler: function (request, reply) {
+      reply.view('thankyou', {})
+    },
+    app: {
+      name: '404'
+    }
   }
 }

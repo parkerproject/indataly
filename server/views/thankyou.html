@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to indataly</title>
+  <title>Login page - INDATALY</title>
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/animate.css">
@@ -58,26 +58,30 @@
 
   <div class="login-page">
     <div class="form" id="myform">
-      <form class="register-form">
-        <label>Enter your full name</label>
-        <input type="text" placeholder="Full name" class="name-js" name="fullname" required />
-        <label>Enter your email</label>
-        <input type="email" placeholder="Email address" class="email-js" name="email" required />
-        <label>Enter the website for your campaign</label>
-        <input type="url" placeholder="URL of website" class="website-js" name="url" required />
-        <button class="continue-js">Continue</button>
-        <small>All fields are mandatory</small>
-      </form>
-      <!-- <form class="login-form">
-        <input type="text" placeholder="username" />
-        <input type="password" placeholder="password" />
-        <button>login</button>
-        <p class="message">Not registered? <a href="#">Create an account</a></p>
-      </form> -->
+      <h2>Preparing your Dashboard ...</h2>
+<p>We're currently getting your dashboard ready and you will receive an email once is done.</p>
+<p>In the meantime, please share! <a href="https://twitter.com/intent/tweet?text=SEO%20for%20everyone%20is%20live!&via=getindataly&hashtags=SEOforEveryone,SEO"><img src="https://g.twimg.com/dev/documentation/image/Twitter_logo_blue_32.png" /></a></p>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
     </div>
   </div>
 
-  <section class="footer">
+  <section class="footer" style="bottom: 0;position: absolute;width: 100%;">
     <div class="container">
       <div class="row">
         <div class="col-md-6 wow fadeInLeft animated footer-nav">
@@ -101,51 +105,6 @@
     </div>
   </section>
 
-  <script src="/js/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
-  <script src="https://checkout.stripe.com/checkout.js"></script>
-  <script src="/js/stripe.js"></script>
-
-  <script>
-    var handler = StripeCheckout.configure(
-    {
-      key: 'pk_test_WZoRgKB96e6hnLTfnWADrY3M',
-      image: 'https://dl.dropboxusercontent.com/u/9995989/logo_indataly.png',
-      locale: 'auto',
-      'panel-label': 'Join',
-      token: function(token)
-      {
-        var data = token
-        data.website = document.querySelector('.website-js').value
-        data.fullname = document.querySelector('.name-js').value
-        $.post("/payment", data, function(status)
-        {
-          if (status === 'success')
-          {
-            location.href = '/thankyou'
-          }
-        });
-      }
-    })
-    $('.continue-js').on('click', function(e)
-    {
-      e.preventDefault()
-      var website_url = document.querySelector('.website-js').value
-      var email = document.querySelector('.website-js').value
-      var fullname = document.querySelector('.name-js').value
-      if (website_url === '' || email === '' || fullname === '')
-      {
-        return
-      }
-      handler.open(
-        {
-          name: 'Standard plan($29)',
-          description: 'Begin your 14-day free trial',
-          email: document.querySelector('.email-js').value
-        })
-        //  $(form).ajaxSubmit()
-    })
-  </script>
 </body>
 
 </html>

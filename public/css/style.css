@@ -112,12 +112,12 @@ background-size: cover;
 .tabbing{width: 156px;border: 1px solid #d6d6d6;border-radius: 20px;margin: 0 auto;margin-bottom: 30px; height: 44px;}
 .footer{background: #0f1418;color: #fff;padding: 20px}
 .brand{margin-left: 15px}
-.brand p{color: #3d4044;font-family: 'sans';font-size: 13px;}
+.brand p{color: #ccc;font-family: 'sans';font-size: 13px;}
 .footer .navbar-default{background: none;color: #fff;}
 .footer-widget{}
 .footer-widget h4{color: #ffffff;font-family: 'semi';font-size: 15px;margin-bottom: 20px}
 .footer-widget li{list-style: none;}
-.footer-widget li a{color: #616469;font-family: 'sans';font-size: 13px;display: block;padding: 3px 0px}
+.footer-widget li a{color: #ccc;font-family: 'sans';font-size: 13px;display: block;padding: 3px 0px}
 .footer-widget li:hover a{color: #fff;text-decoration: underline;}
 
 .price-listings{
@@ -192,7 +192,7 @@ a:hover, a:focus{
 	font-size: 14px;
 }
 
-.form button {
+.form button, input[type=submit] {
 	font-family: "Roboto", sans-serif;
 	text-transform: uppercase;
 	outline: 0;
@@ -209,7 +209,10 @@ a:hover, a:focus{
 
 .form button:hover,
 .form button:active,
-.form button:focus {
+.form button:focus,
+input[type=submit]:hover,
+input[type=submit]:active,
+input[type=submit]:focus {
 	background: #43A047;
 }
 

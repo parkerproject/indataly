@@ -7,7 +7,7 @@ module.exports = function (server) {
   // Bootstrap your controllers so you dont have to load them individually. This loads them all into the controller name space. https://github.com/troygoode/node-require-directory
   const controller = requireDirectory(module, '../controllers')
   const api = requireDirectory(module, '../api')
-    // Array of routes for Hapi
+  // Array of routes for Hapi
   const routeTable = [{
     method: 'GET',
     path: '/{path*}',
@@ -62,10 +62,6 @@ module.exports = function (server) {
     config: controller.email.index
   }, {
     method: 'GET',
-    path: '/thankyou',
-    config: controller.index.thankyou
-  }, {
-    method: 'GET',
     path: '/api/domain',
     config: api.domain.index
   }, {
@@ -85,9 +81,17 @@ module.exports = function (server) {
     path: '/register',
     config: controller.register.index
   }, {
+    method: 'GET',
+    path: '/login',
+    config: controller.login.index
+  }, {
     method: 'POST',
     path: '/payment',
     config: controller.payment.index
+  }, {
+    method: 'GET',
+    path: '/thankyou',
+    config: controller.base.thankyou
   }]
   return routeTable
 }

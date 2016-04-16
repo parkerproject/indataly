@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to indataly</title>
+  <title>Login page - INDATALY</title>
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/animate.css">
@@ -58,16 +58,7 @@
 
   <div class="login-page">
     <div class="form" id="myform">
-      <form class="register-form">
-        <label>Enter your full name</label>
-        <input type="text" placeholder="Full name" class="name-js" name="fullname" required />
-        <label>Enter your email</label>
-        <input type="email" placeholder="Email address" class="email-js" name="email" required />
-        <label>Enter the website for your campaign</label>
-        <input type="url" placeholder="URL of website" class="website-js" name="url" required />
-        <button class="continue-js">Continue</button>
-        <small>All fields are mandatory</small>
-      </form>
+     <script src="https://app.indataly.com/tools/m/login/widget/"></script>
       <!-- <form class="login-form">
         <input type="text" placeholder="username" />
         <input type="password" placeholder="password" />
@@ -122,7 +113,7 @@
         {
           if (status === 'success')
           {
-            location.href = '/thankyou'
+            location.href = '/'
           }
         });
       }

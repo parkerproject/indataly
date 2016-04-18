@@ -149,7 +149,7 @@ a:hover, a:focus{
 
 @media(max-width: 992px){
 	.navbar-default{background: white;}
-	.home_text h2,.home_text p{color: #C5C5C5;margin-top: -20px}
+	.home_text h2,.home_text p{margin-top: -20px}
 	.benifit{background: none;}
 	.left{margin-left: 0%;}
 	.footer .navbar-default{text-align: center;}
@@ -162,9 +162,10 @@ a:hover, a:focus{
 	.container{width: 100%}
 	.navbar-fixed-top{position: inherit;}
 	.home_text{margin: 100px auto;}
-	header{height: 380px; background: transparent url("images/header2.png") no-repeat scroll 0 0 / 120% 100%}
+	header{height: 380px; min-height: 380px;}
 	.left{margin-left: 0%;}
 	.pricing{padding: 20px}
+	.simple_pricing{width: 100%;}
 }
 
 .login-page {

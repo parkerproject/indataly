@@ -44,7 +44,9 @@ background-size: cover;
 	border-radius: 0;
 	text-transform: uppercase;
 	font-size: 14px;
+	display: block;
 }
+
 .home_button:hover{color: white; text-decoration: underline;}
 .benifit{background: url(/images/right.png) no-repeat right bottom;background-size: 55%}
 .about_title1 h2{margin-top: 80px;margin-bottom: 80px;font-family: 'thin';color: #0f1418;font-size: 50px}
@@ -144,7 +146,7 @@ a:hover, a:focus{
 }
 
 @media(max-width: 992px){
-	.navbar-default{background: rgba(146, 146, 146, 0.77);}
+	.navbar-default{background: white;}
 	.home_text h2,.home_text p{color: #C5C5C5;margin-top: -20px}
 	.benifit{background: none;}
 	.left{margin-left: 0%;}

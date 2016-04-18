@@ -49,7 +49,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#HOME"><img src="/images/logo.png" alt="seo marketing for websites" width="120"></a>
+          <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="seo marketing for websites" width="120"></a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -99,49 +99,6 @@
 
   <script src="/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
-  <script src="https://checkout.stripe.com/checkout.js"></script>
-  <script src="/js/stripe.js"></script>
-
-  <script>
-    var handler = StripeCheckout.configure(
-    {
-      key: 'pk_test_WZoRgKB96e6hnLTfnWADrY3M',
-      image: 'https://dl.dropboxusercontent.com/u/9995989/logo_indataly.png',
-      locale: 'auto',
-      'panel-label': 'Join',
-      token: function(token)
-      {
-        var data = token
-        data.website = document.querySelector('.website-js').value
-        data.fullname = document.querySelector('.name-js').value
-        $.post("/payment", data, function(status)
-        {
-          if (status === 'success')
-          {
-            location.href = '/'
-          }
-        });
-      }
-    })
-    $('.continue-js').on('click', function(e)
-    {
-      e.preventDefault()
-      var website_url = document.querySelector('.website-js').value
-      var email = document.querySelector('.website-js').value
-      var fullname = document.querySelector('.name-js').value
-      if (website_url === '' || email === '' || fullname === '')
-      {
-        return
-      }
-      handler.open(
-        {
-          name: 'Standard plan($29)',
-          description: 'Begin your 14-day free trial',
-          email: document.querySelector('.email-js').value
-        })
-        //  $(form).ajaxSubmit()
-    })
-  </script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ module.exports = {
       let customer = {
         email: request.payload.email,
         source: request.payload.id,
-        plan: 'Standard'
+        plan: 'Basic'
       }
       stripe.customers.create(customer, function (err, customer) {
         if (err) console.log(err)

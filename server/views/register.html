@@ -63,15 +63,15 @@
 
   <div class="login-page">
     <div class="form" id="myform">
-      <form class="register-form">
+      <form class="register-form" id="register-form" action="/register" method="post">
         <label>Enter your full name</label>
         <input type="text" placeholder="Full name" class="name-js" name="fullname" required />
         <label>Enter your email</label>
         <input type="email" placeholder="Email address" class="email-js" name="email" required />
         <label>Enter the website for your campaign</label>
         <div class="text-danger"><small>(You cannot change this, once is registered)</small></div>
-        <input type="url" placeholder="URL of website" class="website-js" name="url" required />
-        <button class="continue-js">Continue</button>
+        <input type="url" placeholder="URL of website" class="website-js" name="website" required />
+        <button class="continue-js" type="submit">Continue</button>
         <small>All fields are mandatory</small>
       </form>
       <!-- <form class="login-form">
@@ -113,26 +113,26 @@
   <script src="/js/stripe.js"></script>
 
   <script>
-    var handler = StripeCheckout.configure(
-    {
-      key: 'pk_live_yZdL5TM5kwvhLfvO2lj18yxg',
-      image: 'https://dl.dropboxusercontent.com/u/9995989/logo_indataly.png',
-      locale: 'auto',
-      'panel-label': 'Join',
-      token: function(token)
-      {
-        var data = token
-        data.website = document.querySelector('.website-js').value
-        data.fullname = document.querySelector('.name-js').value
-        $.post("/payment", data, function(status)
-        {
-          if (status === 'success')
-          {
-            location.href = '/thankyou'
-          }
-        });
-      }
-    })
+    // var handler = StripeCheckout.configure(
+    // {
+    //   key: 'pk_live_yZdL5TM5kwvhLfvO2lj18yxg',
+    //   image: 'https://dl.dropboxusercontent.com/u/9995989/logo_indataly.png',
+    //   locale: 'auto',
+    //   'panel-label': 'Join',
+    //   token: function(token)
+    //   {
+    //     var data = token
+    //     data.website = document.querySelector('.website-js').value
+    //     data.fullname = document.querySelector('.name-js').value
+    //     $.post("/payment", data, function(status)
+    //     {
+    //       if (status === 'success')
+    //       {
+    //         location.href = '/thankyou'
+    //       }
+    //     });
+    //   }
+    // })
     $('.continue-js').on('click', function(e)
     {
       e.preventDefault()
@@ -143,13 +143,8 @@
       {
         return
       }
-      handler.open(
-        {
-          name: 'Begin your 14-day free trial',
-          //description: '$29 after the trial period',
-          email: document.querySelector('.email-js').value
-        })
-        //  $(form).ajaxSubmit()
+
+      $('#register-form').submit()
     })
   </script>
 

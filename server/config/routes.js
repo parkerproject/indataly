@@ -81,6 +81,10 @@ module.exports = function (server) {
     path: '/register',
     config: controller.register.index
   }, {
+    method: 'POST',
+    path: '/register',
+    config: controller.register_post.index
+  }, {
     method: 'GET',
     path: '/login',
     config: controller.login.index

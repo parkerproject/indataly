@@ -21,7 +21,7 @@ module.exports = {
         let content = `
           <html>
           <body>
-          <p>A new client has paid</p>
+          <p>A new client has joined</p>
           <strong>Name</strong>: ${request.payload.fullname}<br />
           <strong>Email</strong>: ${request.payload.email}<br />
           <strong>Website</strong>: ${request.payload.website}
